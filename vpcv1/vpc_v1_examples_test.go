@@ -20,7 +20,7 @@ package vpcv1_test
 import (
 	"fmt"
 	"github.com/IBM/go-sdk-core/v5/core"
-	"github.com/IBM/vpc-go-sdk/vpcv1"
+	"github.com/sumitkumartiwari/vpc-go-sdk/vpcv1"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"os"

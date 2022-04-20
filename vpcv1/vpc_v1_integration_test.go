@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/IBM/vpc-go-sdk/vpcv1"
+	"github.com/sumitkumartiwari/vpc-go-sdk/vpcv1"
 )
 
 var (
