@@ -30,18 +30,18 @@ import (
 	"time"
 
 	"github.com/IBM/go-sdk-core/v5/core"
-	common "github.com/sumitkumartiwari/vpc-go-sdk/common"
 	"github.com/go-openapi/strfmt"
+	common "github.com/sumitkumartiwari/vpc-go-sdk/common"
 )
 
 // VpcV1 : The IBM Cloud Virtual Private Cloud (VPC) API can be used to programmatically provision and manage virtual
 // server instances, along with subnets, volumes, load balancers, and more.
 //
-// API Version: 2022-03-29
+// API Version: 2022-03-30
 type VpcV1 struct {
 	Service *core.BaseService
 
-	// The API version, in format `YYYY-MM-DD`. For the API behavior documented here, specify any date between `2022-03-29`
+	// The API version, in format `YYYY-MM-DD`. For the API behavior documented here, specify any date between `2022-03-30`
 	// and today's date (UTC).
 	Version *string
 
@@ -62,7 +62,7 @@ type VpcV1Options struct {
 	URL           string
 	Authenticator core.Authenticator
 
-	// The API version, in format `YYYY-MM-DD`. For the API behavior documented here, specify any date between `2022-03-29`
+	// The API version, in format `YYYY-MM-DD`. For the API behavior documented here, specify any date between `2022-03-30`
 	// and today's date (UTC).
 	Version *string
 }
@@ -121,7 +121,7 @@ func NewVpcV1(options *VpcV1Options) (service *VpcV1, err error) {
 	}
 
 	if options.Version == nil {
-		options.Version = core.StringPtr("2022-03-29")
+		options.Version = core.StringPtr("2022-03-30")
 	}
 
 	service = &VpcV1{
